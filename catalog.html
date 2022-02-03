@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
       <header class="main-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-              <img class="page-header-logo" src="images/logo_sedona.svg" weight="139" height="70" alt="Логотип сайта туристического города Седона">
+              <img class="page-header-logo" src="images/logo_sedona.svg" width="139" height="70" alt="Логотип сайта туристического города Седона">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="home.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
@@ -37,7 +38,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="button" href="#">ХОЧУ СЮДА!</a>
+              <a class="button button-navigation" href="#">ХОЧУ СЮДА!</a>
             </li>
           </ul>
         </nav>
@@ -49,7 +50,7 @@
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
-                        <img class="breadcrumbs-logo-home" src="" alt="Главная">
+                        <img class="breadcrumbs-logo-home" src="images/catalog_images/breadcrumbs_home.svg" width="12" height="12" alt="Главная">
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -111,7 +112,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                    <button class="button" type="submit">Применить</button>
+                    <button class="button button-blue" type="submit">Применить</button>
                     <button class="button button-reset" type="reset">Сбросить</button>
                 </form>
             </section>
@@ -142,7 +143,7 @@
                         <span class="hotel-card-price">От 4000 ₽</span>
                     </p>
                     <a class="button hotel-card-button" href="#">подробнее</a>
-                    <a class="button hotel-card-button-blue" href="#">В избранное</a>
+                    <a class="button button-blue" href="#">В избранное</a>
                     <p class="hotel-rating">
                         <img class="hotel-class" src="images/catalog_images/stars_4.svg" alt="Четыре звезды">
                         <span class="hotel-rating">Рейтинг: 8,5</span>
@@ -157,7 +158,7 @@
                         <span class="hotel-card-price">От 3000 ₽</span>
                     </p>
                     <a class="button hotel-card-button" href="#">подробнее</a>
-                    <a class="button hotel-card-button-blue" href="#">В избранное</a>
+                    <a class="button button-blue" href="#">В избранное</a>
                     <p class="hotel-rating">
                         <img class="hotel-class" src="images/catalog_images/stars_3.svg" alt="Три звезды">
                         <span class="hotel-rating">Рейтинг: 8,9</span>
@@ -172,7 +173,7 @@
                         <span class="hotel-card-price">От 2000 ₽</span>
                     </p>
                     <a class="button hotel-card-button" href="#">подробнее</a>
-                    <a class="button hotel-card-button-green" href="#">В избранном</a>
+                    <a class="button button-blue" href="#">В избранное</a>
                     <p class="hotel-rating">
                         <img class="hotel-class" src="images/catalog_images/Stars_2.svg" alt="Две звезды">
                         <span class="hotel-rating">Рейтинг: 9,2</span>
@@ -187,20 +188,15 @@
                         <span class="hotel-card-price">От 3000 ₽</span>
                     </p>
                     <a class="button hotel-card-button" href="#">подробнее</a>
-                    <a class="button hotel-card-button-blue" href="#">В избранное</a>
+                    <a class="button button-blue" href="#">В избранное</a>
                     <p class="hotel-rating">
                         <img class="hotel-class" src="images/catalog_images/Stars_2.svg" alt="Две звезды">
                         <span class="hotel-rating">Рейтинг: 9,2</span>
                     </p>
                 </li>
             </ul>
-            <button class="button show-more" type="button">Загрузить ещё</button>
+            <button class="button button-blue show-more" type="button">Загрузить ещё</button>
             <ul class="pagination">
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-prev pagination-disabled">
-                        <span class="visually-hidden">Предыдущая страница</span>
-                    </a>
-                </li>
                 <li class="pagination-item">
                     <a class="pagination-link pagination-current">1</a>
                 </li>
@@ -219,11 +215,6 @@
                 <li class="pagination-item">
                     <a class="pagination-link" href="#">10</a>
                 </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">
-                        <span class="visually-hidden">Следующая страница</span>
-                    </a>
-                </li>
             </ul>
             <p>
                 <span class="">Гостиниц на странице:</span>
@@ -235,7 +226,7 @@
             </p>
         </section>
       </main>
-      <section class="newsletter">
+      <section class="newsletter newsletter-catalog">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -274,7 +265,7 @@
         <section class="footer-logo-htmlacademy">
             <span class="visually-hidden">Сделано в</span>
             <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
-                <img class="htmlacademy-logo" src="images/footer_icon/logo_htmlacademy.svg" weight="115" height="33" alt="Логотип html academy">
+                <img class="htmlacademy-logo" src="images/footer_icon/logo_htmlacademy.svg" width="115" height="33" alt="Логотип html academy">
             </a>
         </section>
       </footer>
