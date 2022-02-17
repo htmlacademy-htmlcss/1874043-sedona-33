@@ -30,6 +30,17 @@ body {
     background-color: #ffffff;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .page-header-logo {
     display: block;
 }
@@ -40,6 +51,8 @@ body {
 }
 
 .navigation-link {
+    display: block;
+    padding: 20px 17px;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
@@ -59,18 +72,29 @@ body {
 }
 
 .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    margin-left: 30px;
     width: 450px;
     list-style-type: none;
 }
 
 .navigation-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     width: 300px;
     margin-left: auto;
     list-style-type: none;
+}
+
+.navigation-list .navigation-user {
+    min-width: 18px;
+    min-height: 18px;
 }
 
 .page-container {
@@ -88,9 +112,13 @@ body {
     line-height: 21px;
 }
 
-.button-navigation{
+.button-navigation {
+    display: block;
+    padding: 23px 27px;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .logo-index {
@@ -140,7 +168,9 @@ body {
 }
 
 .advantages-item {
+    background-color: #83B3D3;
     width: 400px;
+    min-height: 384px;
 }
 
 .advantages-foto-one {
@@ -158,10 +188,17 @@ body {
 }
 
 h3.advantages-title {
+    margin-top: 97px;
+    margin-bottom: 30px;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+}
+
+.advantages-desription {
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .search-subtitle {
@@ -207,22 +244,23 @@ h3.advantages-title {
 }
 
 h2.newsletter-title {
+    margin: 0;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    padding-top: 94px;
-    margin-bottom: 29px;
+    margin-top: 94px;
 }
 
 .newsletter-text {
+    margin: 0;
     font-size: 22px;
     line-height: 26px;
-    margin-bottom: 46px;
+    margin-top: 46px;
 }
 
 .newsletter-form {
-    padding-bottom: 94px;
+    margin-top: 46px;
 }
 
 .newsletter-button {
@@ -240,23 +278,42 @@ h2.newsletter-title {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    min-height: 120px;
+    margin-top: 140px;
 }
 
-.footer-social {
-    width: 120px;
-    margin-left: 72px;
-    margin-right: 61px;
+
+.footer-social-list {
+    margin: 0;
+    padding: 0;
+    margin: 49px 61px 53px 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 107px;
+}
+
+.footer-social-item {
+    width: 18px;
+    height: 15px;
+    list-style-type: none;
+}
+
+.footer-social-item::nth-child(3n) {
+    margin-right: 0;
 }
 
 .footer-contacts {
-    text-align: center;
+    display: flex;
+    flex: wrap;
     width: 720px;
-    font-style: normal;
+    justify-content: center;
     margin-right: 53px;
 }
 
-.footer-logo-htmlacademy {
-    width: 115px;
+.footer-contacts-adress {
+    margin: 0;
+    padding: 30px;
 }
 
 .footer-contacts-adress-phone {
@@ -264,7 +321,19 @@ h2.newsletter-title {
     color:black;
     font-size: 40px;
     line-height: 40px;
+    text-decoration: none;
 }
+
+.footer-logo-htmlacademy {
+    display: block;
+    flex-wrap: wrap;
+    width: 115px;
+    justify-content: center;
+    padding-top: 42px;
+    padding-bottom: 44px;
+}
+
+
 
 /* Catalog */
 .main-inner {
@@ -278,6 +347,7 @@ h2.newsletter-title {
 
 .inner-header {
     color: #FFFFFF;
+    border-top: 1px solid;
     background-color: #17085c;
     background-image: url("../images/catalog_images/catalog_background.jpg");
     background-size: 100% 100%;
@@ -285,19 +355,34 @@ h2.newsletter-title {
 }
 
 .inner-header-title {
+    margin: 0;
+    margin-top: 35px;
+    margin-left: 71px;
     font-weight: bold;
     font-size: 60px;
     line-height: 78px;
 }
 
 .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    margin-left: 73px;
     font-size: 16px;
     line-height: 21px;
+    list-style-type: none;
+}
+
+.breadcrumbs-link {
+    margin-right: 26px;
 }
 
 .catalog-hotel {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    margin-top: 45px;
+    margin-left: 71px;
 }
 
 .container-display-setting {
@@ -330,17 +415,31 @@ h2.newsletter-title {
 }
 
 .container-display-settings {
-    margin-bottom: 53px;
+    display: flex;
+}
+
+.container-display-settings .button {
+    width: 48px;
+    height: 48px;
 }
 
 .container-hotel-card {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    margin-top: 44px;
     width: 1056px;
+}
+.results-search {
+    margin: 0 auto;
+    margin-top: 44px;
+    width: 1057px;
 }
 
 .results-search h2 {
+    margin: 0;
+    margin-right: 191px;
+    width: 338px;
     font-weight: bold;
     font-size: 30px;
     line-height: 39px;
@@ -348,8 +447,10 @@ h2.newsletter-title {
 }
 
 .select-control {
+    width: 287px;
     font-size: 18px;
     line-height: 23px;
+    margin-right: 81px;
 }
 
 .hotel-card-button {
@@ -368,6 +469,7 @@ h2.newsletter-title {
     width: 620px;
     padding-top: 17px;
     padding-bottom: 17px;
+    margin-top: 64px;
 }
 
 .hotel-list {
@@ -406,24 +508,35 @@ h2.newsletter-title {
     text-transform: uppercase;
 }
 
-.pagination {
-
+.pagination-container {
     display: flex;
-    flex-direction: row;
+    margin-top: 60px;
+    width: 1056px;
 }
 
-.pagination-item {
+.pagination {
+    display: flex;
     padding: 0;
-    bottom: 0;
+    margin: 0;
+    margin-right: 301px;
     list-style-type: none;
 }
 
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .pagination-link {
+    display: block;
+    box-sizing: border-box;
     font-weight: bold;
+    width: 55px;
+    height: 55px;
     font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
     background-color: #83B3D3;
+    text-decoration: none;
 }
 
 .pagination-current {
@@ -431,8 +544,23 @@ h2.newsletter-title {
     background-color: #F2F2F2;
 }
 
+.container-element {
+    display: block;
+    width: 386px;
+    margin: 4px;
+}
+
+.element-count-control {
+    width: 160px;
+    height: 55px;
+    border: 2px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
 .newsletter-catalog {
     color: #000000;
     background-color: #FFFFFF;
     background-image: none;
 }
+

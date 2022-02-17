@@ -129,15 +129,15 @@
                         <option value="expensive">Сначала дорогие</option>
                         <option value="popular">Сначала популярные</option>
                     </select>
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать карточки</span>
-                    </a>
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать подробную карточку</span>
-                    </a>
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать список карточек</span>
-                    </a>
+                        <a class="button" href="#">
+                            <span class="visually-hidden">Показать карточки</span>
+                        </a>
+                        <a class="button" href="#">
+                            <span class="visually-hidden">Показать подробную карточку</span>
+                        </a>
+                        <a class="button" href="#">
+                            <span class="visually-hidden">Показать список карточек</span>
+                        </a>
                 </section>
                 <section class="container-hotel-card">
                     <ul class="hotel-list">
@@ -204,34 +204,36 @@
                     </ul>
                     <button class="button button-blue show-more" type="button">Загрузить ещё</button>
                 </section>
-                <ul class="pagination">
-                    <li class="pagination-item">
-                        <a class="pagination-link pagination-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">3</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">4</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">...</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">10</a>
-                    </li>
-                </ul>
-                <p>
-                    <span class="">Гостиниц на странице:</span>
-                    <select class="element-count-control" aria-label="Количество гостиниц на странице">
-                        <option value="four">4</option>
-                        <option value="eight">8</option>
-                        <option value="twelve">12</option>
-                    </select>
-                </p>
+                <div class="pagination-container">
+                    <ul class="pagination">
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-current">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">10</a>
+                        </li>
+                    </ul>
+                    <div class="container-element">
+                        <span class="Hotel-per-page">Гостиниц на странице:</span>
+                        <select class="element-count-control" aria-label="Количество гостиниц на странице">
+                            <option value="four">4</option>
+                            <option value="eight">8</option>
+                            <option value="twelve">12</option>
+                        </select>
+                    </div>
+                </div>
             </section>
         </div>
       </main>
