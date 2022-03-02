@@ -428,7 +428,7 @@ h2.newsletter-title {
 
 .catalog-hotel {
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     margin-top: 45px;
     margin-left: 71px;
 }
@@ -444,14 +444,35 @@ h2.newsletter-title {
     line-height: 26px;
 }
 
+.catalog-filter {
+    display: flex;
+}
+
 .catalog-filter-list {
+    padding: 0;
+    margin: 0;
     font-weight: normal;
+    list-style-type: none
 }
 
 .button-blue {
+    display: inline-block;
+    width: 141px;
+    text-align: center;
     padding-top: 9px;
     padding-bottom: 10px;
     background-color: #83B3D3;
+    border-radius: 4px;
+}
+
+.container-button-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-apply {
+    width: 160px;
+    height: 48px;
 }
 
 .button-reset {
@@ -472,12 +493,18 @@ h2.newsletter-title {
 }
 
 .container-hotel-card {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 44px;
-    width: 1056px;
+    margin-top: 53px;
 }
+
+.hotel-list{
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 10px 18px;
+    margin: 0;
+    padding: 0;
+}
+
 .results-search {
     margin: 0 auto;
     margin-top: 44px;
@@ -501,16 +528,39 @@ h2.newsletter-title {
     margin-right: 81px;
 }
 
-.hotel-card-button {
-    padding-top: 9px;
-    padding-bottom: 10px;
+.container-hotel-title {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    justify-content: space-between;
 }
 
-.hotel-card-button-blue {
-    background-color: #83B3D3;
+.hotel-card-type {
+    margin: 0;
+    width: 133px;
+}
+
+.hotel-card-price {
+    width: 143px;
+}
+
+.container-card-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.hotel-card-button {
+    display: inline-block;
+    width: 133px;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    border-radius: 4px;
 }
 
 .show-more {
+    display: block;
     margin: 0 auto;
     font-size: 20px;
     line-height: 26px;
@@ -518,20 +568,23 @@ h2.newsletter-title {
     padding-top: 17px;
     padding-bottom: 17px;
     margin-top: 64px;
+    border-radius: 4px;
 }
 
-.hotel-list {
+/* .hotel-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-}
+} */
 
 .hotel-list a{
     text-decoration: none;
 }
 
 .hotel-list h3{
+    margin: 0;
+    margin-top: 16px;
     color: #000000;
     font-weight: bold;
     font-size: 24px;
@@ -550,10 +603,23 @@ h2.newsletter-title {
     line-height: 23px;
 }
 
+.hotel-rating-info {
+    margin: 0;
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
 .hotel-rating {
+    padding-top: 9px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 160px;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
+    background: #F2F2F2;
+    border-radius: 4px;
 }
 
 .pagination-container {
