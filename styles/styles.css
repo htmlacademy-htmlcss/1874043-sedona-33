@@ -114,11 +114,16 @@ body {
 
 .button-navigation {
     display: block;
-    padding: 23px 27px;
+    align-items: center;
+    width: 160px;
+    margin-top: 14px;
+    padding-top: 9px;
+    padding-bottom: 8px;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     text-decoration: none;
+    border-radius: 4px;
 }
 
 .logo-index {
@@ -278,12 +283,20 @@ h3.advantages-title {
 }
 
 .search-button {
-    padding: 15px 15px;
+    display: block;
+    width: 575px;
+    padding-top: 15px;
+    padding-bottom: 9px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    border-radius: 10px;
 }
 
 .newsletter {
     text-align: center;
-    border-top: 1px solid;
+    border-top: 1px solid #FFFFFF;
     background-image: url("../images/newsletter_background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -568,15 +581,9 @@ h2.newsletter-title {
     padding-top: 17px;
     padding-bottom: 17px;
     margin-top: 64px;
+    text-transform: uppercase;
     border-radius: 4px;
 }
-
-/* .hotel-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-} */
 
 .hotel-list a{
     text-decoration: none;
@@ -643,14 +650,15 @@ h2.newsletter-title {
 .pagination-link {
     display: block;
     box-sizing: border-box;
-    font-weight: bold;
     width: 55px;
     height: 55px;
+    font-weight: bold;
     font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
     background-color: #83B3D3;
     text-decoration: none;
+    border-radius: 4px;
 }
 
 .pagination-current {
