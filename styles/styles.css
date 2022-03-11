@@ -43,11 +43,14 @@ body {
 
 .page-header-logo {
     display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .main-header {
     color:black;
     background-color: #ffffff;
+    margin-bottom: -5px;
 }
 
 .navigation-link {
@@ -667,6 +670,7 @@ h2.newsletter-title {
 
 .button-blue:hover {
     background-color: #68A2CA;
+    box-shadow: 0px 0px 0px 1px #756257;
 }
 
 .button-blue:focus {
@@ -677,6 +681,7 @@ h2.newsletter-title {
 .button-blue:active {
     color: rgb(255, 255, 255, 0.3);
     background-color: #68A2CA;
+    box-shadow: 0px 0px 0px 1px #756257;
 }
 
 .container-button-filter {
@@ -937,7 +942,7 @@ h2.newsletter-title {
 }
 
 .pagination-link {
-    display: block;
+    display: flex;
     box-sizing: border-box;
     width: 55px;
     height: 55px;
@@ -949,7 +954,8 @@ h2.newsletter-title {
     text-decoration: none;
     border: 3px solid transparent;
     border-radius: 4px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .pagination-link:hover:not(.pagination-current) {
