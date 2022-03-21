@@ -19,6 +19,7 @@ html{
 }
 
 body {
+    min-width: 1200px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -179,7 +180,7 @@ body {
 .button-navigation {
     display: flex;
     width: 160px;
-    height: 37px;
+    min-height: 37px;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -340,11 +341,9 @@ h3.advantages-title {
 }
 
 .search-text {
-    width: 720px;
     text-align: center;
     font-size: 22px;
     line-height: 26px;
-    margin: 0 auto;
     margin-bottom: 56px;
 }
 
@@ -912,7 +911,7 @@ h2.newsletter-title {
     box-sizing: border-box;
     width: 575px;
     height: 60px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1045,6 +1044,7 @@ h2.newsletter-title {
 
 .breadcrumbs {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-top: 5px;
@@ -1080,10 +1080,12 @@ h2.newsletter-title {
 
 .catalog-filter-group:nth-child(1) {
     margin-right: 67px;
+    min-width: 150px;
 }
 
 .catalog-filter-group:nth-child(2) {
     margin-right: 167px;
+    min-width: 145px;
 }
 
 .catalog-filter-group:nth-child(3) {
@@ -1232,6 +1234,7 @@ h2.newsletter-title {
 
 .catalog-hotel {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-top: 45px;
     margin-left: 71px;
@@ -1364,8 +1367,8 @@ h2.newsletter-title {
 .button-blue {
     display: flex;
     box-sizing: border-box;
-    width: 141px;
-    height: 37px;
+    min-width: 141px;
+    min-height: 37px;
     justify-content: center;
     align-items: center;
     background-color: #83B3D3;
@@ -1393,21 +1396,22 @@ h2.newsletter-title {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 163px;
+    min-width: 163px;
+    margin-right: 71px;
 }
 
 .button-apply {
     margin-top: 60px;
     margin-bottom: 20px;
-    width: 160px;
-    height: 48px;
+    min-width: 160px;
+    min-height: 48px;
     line-height: 21px;
 }
 
 .button-reset {
     padding: 0;
     margin: 0;
-    width: 160px;
+    min-width: 160px;
     line-height: 23px;
     font-weight: normal;
     appearance: none;
@@ -1418,6 +1422,7 @@ h2.newsletter-title {
 
 .container-display-settings {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container-display-settings .button {
@@ -1473,13 +1478,12 @@ h2.newsletter-title {
 }
 
 .select-control {
-    display: block;
+    display: flex;
     box-sizing: border-box;
     width: 287px;
     font: inherit;
     font-size: 18px;
     line-height: 23px;
-    /* margin-right: 81px; */
     padding-left: 19px;
     outline: none;
     border: 2px solid #E6E6E6;
@@ -1554,8 +1558,8 @@ h2.newsletter-title {
 
 .hotel-card-button {
     display: flex;
-    width: 133px;
-    height: 37px;
+    min-width: 133px;
+    min-height: 37px;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
@@ -1585,8 +1589,8 @@ h2.newsletter-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    width: 620px;
-    height: 60px;
+    min-width: 620px;
+    min-height: 60px;
     margin-top: 64px;
     text-transform: uppercase;
     border-radius: 4px;
@@ -1644,6 +1648,11 @@ h2.newsletter-title {
     display: flex;
     margin-top: 16px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.hotel-class {
+    display: flex;
 }
 
 .hotel-rating {
@@ -1679,8 +1688,8 @@ h2.newsletter-title {
 .pagination-link {
     display: flex;
     box-sizing: border-box;
-    width: 55px;
-    height: 55px;
+    min-width: 55px;
+    min-height: 55px;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
