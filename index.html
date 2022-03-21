@@ -203,6 +203,7 @@
               <label class="field-label" for="date-arrival">Дата заезда:</label>
               <span class="search-input-wrapper">
                 <input class="date-arrival-field field-modal" type="text" id="date-arrival" name="date-arrival" placeholder="Укажите дату">
+                <span class="data-logo"></span>
                 <span class="form-search-text error-text">Мы не можем отправить вас в прошлое.</span> <!--Для сообщения об ошибке класс "error-search"-->
               </span>
             </p>
@@ -210,11 +211,12 @@
               <label class="field-label" for="date-departure">Дата выезда:</label>
               <span class="search-input-wrapper">
                 <input class="date-departure-field field-modal" type="text" id="date-departure" name="date-departure" placeholder="Укажите дату">
+                <span class="data-logo"></span>
                 <span class="form-search-text">На эти даты есть свободные номера. Пока есть.</span>
               </span> 
             </p>
             <div class="field-group-container">
-              <div class="field-group">
+              <p class="field-group">
                 <label class="field-label" for="adults">Взрослые:</label>
                 <span class="container-counter">
                   <button class="search-quantity-button button-munus" type="button">
@@ -231,10 +233,10 @@
                     <span class="visually-hidden">Увеличить</span>
                   </button>
                 </span>
-              </div>
-              <div class="field-group">
-                <span class="field-label">
-                  <label class="field-label" for="children">Дети:</label>
+              </p>
+              <p class="field-group">
+                <span class="field-label form-label-icon">
+                  <label class="field-label field-children-label" for="children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                       <svg class="tooltip-icon" fill="none" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +267,7 @@
                       <span class="visually-hidden">Увеличить</span>
                     </button>
                 </span>
-              </div>
+              </p>
             </div>
             <button class="modal-search-button" type="submit">Найти</button>
           </form>
