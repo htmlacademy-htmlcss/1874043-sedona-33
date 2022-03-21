@@ -1093,7 +1093,7 @@ h2.newsletter-title {
 }
 
 .range-scale {
-    margin-top: 32px;
+    margin-top: 20px;
     position: relative;
     height: 4px;
     background-color: rgb(255, 255, 255, 0.3);
@@ -1444,6 +1444,7 @@ h2.newsletter-title {
 }
 
 .hotel-image {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: 3px solid transparent;
@@ -1627,6 +1628,7 @@ h2.newsletter-title {
 .hotel-list h3{
     margin: 0;
     padding: 0;
+    margin-top: 7px;
     color: #000000;
     font-weight: bold;
     font-size: 24px;
