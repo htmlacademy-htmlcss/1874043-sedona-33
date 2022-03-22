@@ -28,7 +28,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color:black;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
 }
 
 .visually-hidden {
@@ -49,6 +49,8 @@ body {
 }
 
 .main-header {
+    margin: 0 auto;
+    width: 1200px;
     color:black;
     background-color: #ffffff;
     margin-bottom: -5px;
@@ -162,6 +164,7 @@ body {
 .page-container {
     width: 1200px;
     margin: 0 auto;
+    background-color: #FFFFFF;
 }
 
 .button {
