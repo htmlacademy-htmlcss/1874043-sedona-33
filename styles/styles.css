@@ -1797,7 +1797,7 @@ h2.newsletter-title {
 }
 
 .element-count-control {
-    max-width: 160px;
+    width: 160px;
     min-height: 48px;
     font: inherit;
     margin-left: 51px;
