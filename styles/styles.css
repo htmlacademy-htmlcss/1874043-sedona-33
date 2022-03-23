@@ -160,6 +160,29 @@ body {
     list-style-type: none;
 }
 
+.navigation-favorite::after {
+    content: "12";
+    position: absolute;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 23px;
+    padding: 3px 0;
+    border-radius: 10px;
+    background-color: #7DB54F;
+    
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: -0.1em;
+}
+
+.navigation-user .navigation-item:nth-child(2) {
+    position: relative;
+}
+
 .navigation-list .navigation-user {
     min-width: 42px;
     min-height: 18px;
@@ -185,12 +208,13 @@ body {
 }
 
 .button-navigation {
+    box-sizing: border-box;
     display: flex;
     width: 160px;
     min-height: 37px;
-    box-sizing: border-box;
     align-items: center;
     justify-content: center;
+    padding: 5px;
     margin-left: 20px;
     font-size: 16px;
     line-height: 20px;
@@ -202,8 +226,8 @@ body {
 }
 
 .logo-index {
-    background-color:#17085c;
-    background-image: url("../images/index_background.jpg");
+    background-color:#8bbdd6;
+    background-image: url("../images/index-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-top: 51px;
@@ -248,50 +272,54 @@ body {
 }
 
 .advantages-item {
+    box-sizing: border-box;
     width: 400px;
     min-height: 384px;
+    padding: 10px;
 }
 
 .advantages-foto-one {
     width: 800px;
     height: 384px;
-    background-image: url("../images/advantages_logo/advantages_1.jpg");
+    background-image: url("../images/advantages-logo/advantages-1.jpg");
     background-size: 100% 100%;
+    background-color: #f6d3c4;
 }
 
 .advantages-foto-two {
     width: 800px;
     height: 384px;
-    background-image: url("../images/advantages_logo/advantages_2.jpg");
+    background-image: url("../images/advantages-logo/advantages-2.jpg");
     background-size: 100% 100%;
+    background-color: #f6d3c4;
 }
 
 .logo-housing {
     margin: 0 auto;
-    margin-top: 89px;
+    margin-top: 80px;
     width: 75px;
     height: 72px;
-    background-image: url("../images/advantages_logo/home_icon.svg");
+    background-image: url("../images/advantages-logo/home-icon.svg");
     background-size: cover;
     text-align: center;
 }
 
 .logo-foot {
     margin: 0 auto;
-    margin-top: 89px;
+    margin-top: 82px;
     width: 74px;
     height: 70px;
-    background-image: url("../images/advantages_logo/foot_icon.svg");
+    background-image: url("../images/advantages-logo/foot-icon.svg");
     background-size: cover;
     text-align: center;
 }
 
 .logo-souvenirs {
     margin: 0 auto;
-    margin-top: 89px;
+    margin-top: 77px;
     width: 64px;
     height: 76px;
-    background-image: url("../images/advantages_logo/souvenirs_icon.svg");
+    background-image: url("../images/advantages-logo/souvenirs-icon.svg");
     background-size: cover;
     text-align: center;
 }
@@ -307,8 +335,8 @@ li div + .advantages-title {
 }
 
 h3.advantages-title {
-    width: 400px;
-    margin-top: 97px;
+    margin: 0;
+    margin-top: 87px;
     margin-bottom: 30px;
     font-weight: bold;
     font-size: 24px;
@@ -316,9 +344,18 @@ h3.advantages-title {
     text-transform: uppercase;
 }
 
-.advantages-desription {
+.middle-title {
+    margin: 0;
+    bottom: 0;
+    width: auto;
+}
+
+.advantages-description {
     margin: 0;
     padding: 0;
+}
+
+.middle-description {
     margin-bottom: 30px;
 }
 
@@ -368,7 +405,8 @@ h3.advantages-title {
     align-items: center;
     justify-content: center;
     width: 575px;
-    height: 60px;
+    min-height: 60px;
+    padding: 10px;
     font-weight: bold;
     font-size: 20px;
     line-height: 36px;
@@ -395,17 +433,18 @@ h3.advantages-title {
 }
 
 .newsletter {
+    box-sizing: border-box;
     text-align: center;
     border-top: 1px solid #FFFFFF;
-    background-image: url("../images/newsletter_background.jpg");
+    background-image: url("../images/newsletter-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 1200px;
+    padding: 30px;
     margin: 0 auto;
     min-height: 411px;
-    /* margin-bottom: 140px; */
     color: #FFFFFF;
-    background-color: #17085c;
+    background-color: #8eabb9;
 }
 
 h2.newsletter-title {
@@ -414,7 +453,7 @@ h2.newsletter-title {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    margin-top: 94px;
+    margin-top: 60px;
 }
 
 .newsletter-text {
@@ -477,6 +516,7 @@ h2.newsletter-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    padding: 10px;
     width: 200px;
     border: 3px solid transparent;
     border-radius: 0px 10px 10px 0px;
@@ -502,7 +542,6 @@ h2.newsletter-title {
     margin: 0 auto;
     min-height: 120px;
     background-color: #FFFFFF;
-    /* margin-top: 140px; */
 }
 
 .social-button {
@@ -512,6 +551,7 @@ h2.newsletter-title {
 
 .footer-social {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-right: 50px;
     margin-left: 61px;
@@ -527,7 +567,8 @@ h2.newsletter-title {
 }
 
 .footer-social-item {
-    margin-right: 3px;             
+    margin-right: 3px;
+    padding-bottom: 7px;           
 }
 
 .social-button {
@@ -880,11 +921,11 @@ h2.newsletter-title {
     border-radius: 0 4px 4px 0;
 }
 
-.search-quantity-button > svg > path {
+.search-quantity-button > svg {
     opacity: 0.3;
 }
   
- .search-quantity-button:hover > svg > path {
+ .search-quantity-button:hover > svg {
     opacity: 1;
 }
   
@@ -904,7 +945,7 @@ h2.newsletter-title {
     border-radius: 4px;
 }
 
-.search-quantity-button:active > svg > path {
+.search-quantity-button:active > svg {
     opacity: 0.2;
 }
 
@@ -995,7 +1036,7 @@ h2.newsletter-title {
     color: #FFFFFF;
     background-color: #333333;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
-    padding: 15px 18px 18px 22px;
+    padding: 18px 18px 25px 22px;
     position: absolute;
     top: 100%;
     margin-top: 15px;
@@ -1035,8 +1076,8 @@ h2.newsletter-title {
 
 .inner-header {
     color: #FFFFFF;
-    background-color: #17085c;
-    background-image: url("../images/catalog_images/catalog_background.jpg");
+    background-color: #85accb;
+    background-image: url("../images/catalog-images/catalog-background.jpg");
     background-size: 100% 100%;
     background-repeat:no-repeat;
     padding-bottom: 83px;
@@ -1068,7 +1109,7 @@ h2.newsletter-title {
 }
 
 .breadcrumbs-item::after {
-    content: url("../images/catalog_images/arrow-link.svg");
+    content: url("../images/catalog-images/arrow-link.svg");
     display: block;
     position: absolute;
     top: -1px;
@@ -1101,7 +1142,7 @@ h2.newsletter-title {
 }
 
 .range-scale {
-    margin-top: 20px;
+    margin-top: -5px;
     position: relative;
     height: 4px;
     background-color: rgb(255, 255, 255, 0.3);
@@ -1332,7 +1373,7 @@ h2.newsletter-title {
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
     position: absolute;
-    background-image: url("../images/catalog_images/check-box-logo.svg");
+    background-image: url("../images/catalog-images/check-box-logo.svg");
     width: 12px;
     height: 10px;
     top: 15%;
@@ -1375,8 +1416,9 @@ h2.newsletter-title {
 .button-blue {
     display: flex;
     box-sizing: border-box;
-    min-width: 141px;
+    width: 141px;
     min-height: 37px;
+    padding: 5px;
     justify-content: center;
     align-items: center;
     background-color: #83B3D3;
@@ -1440,7 +1482,7 @@ h2.newsletter-title {
 
 .container-hotel-card {
     margin: 0 auto;
-    margin-top: 53px;
+    margin-top: 57px;
 }
 
 .hotel-list{
@@ -1567,8 +1609,9 @@ h2.newsletter-title {
 
 .hotel-card-button {
     display: flex;
-    min-width: 133px;
+    width: 133px;
     min-height: 37px;
+    padding: 5px;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
@@ -1666,10 +1709,13 @@ h2.newsletter-title {
 }
 
 .hotel-rating {
-    padding-top: 9px;
-    padding-bottom: 10px;
-    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
     width: 160px;
+    min-height: 37px;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
@@ -1679,15 +1725,18 @@ h2.newsletter-title {
 
 .pagination-container {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 60px;
     width: 1056px;
 }
 
 .pagination {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-right: 301px;
+    max-width: 521px;
+    /* margin-right: 301px; */
     list-style-type: none;
 }
 
@@ -1700,6 +1749,8 @@ h2.newsletter-title {
     box-sizing: border-box;
     min-width: 55px;
     min-height: 55px;
+    padding: 5px;
+    margin-bottom: 3px;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
@@ -1736,18 +1787,20 @@ h2.newsletter-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 175px;
 }
 .container-element {
     display: flex;
-    width: 386px;
+    max-width: 386px;
     margin: 4px;
+    margin-left: auto;
 }
 
 .element-count-control {
-    width: 160px;
-    height: 48px;
+    max-width: 160px;
+    min-height: 48px;
     font: inherit;
-    margin-left: auto;
+    margin-left: 51px;
     padding-left: 17px;
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
@@ -1784,7 +1837,7 @@ h2.newsletter-title {
 }
 
 .newsletter-catalog .newsletter-title {
-    margin-top: 73px;
+    margin-top: 43px;
 }
 
 .newsletter-catalog .newsletter-text {
